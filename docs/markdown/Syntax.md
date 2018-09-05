@@ -114,7 +114,7 @@ The full list of escape sequences is:
 * `\Uxxxxxxxx` Character with 32-bit hex value xxxxxxxx
 * `\N{name}` Character named name in Unicode database
 
-As in python and C, up to three octal digits are accepted in `\ooo`.
+As in python and C, up to three octal digits are accepted in `\ooo`. Arbitrary byte values, like ascii control characters, can be specified in this way. For example, `\0` will be a `NUL` character (value `0x00`).
 
 #### String concatenation
 
